@@ -18,5 +18,23 @@
        this!
 
 */
+let word = "coffee"
+let letter = "e"
+let times = 0
 
-// YOUR CODE HERE
+count = 0;
+while(count < word.length) {
+   // console.log(word[count]);
+   if (letter === word[count]) {
+      // console.log(letter);
+      times = times +1;
+      // console.log(times);
+   }
+   count = count + 1;
+}
+
+if (times>0) {
+console.log("The letter \""+ letter +"\" exists " + times +" times!");
+} else{
+   console.log("Nope, that letter doesn't exist in my word!");
+}

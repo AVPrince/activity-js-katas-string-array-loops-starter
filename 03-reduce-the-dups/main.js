@@ -9,4 +9,27 @@
 */
 
 const redundantArray = [1, 1, 2, 3, 3, 4]
-// YOUR CODE HERE
+let newArray = []
+
+let index = 0;
+while (index < redundantArray.length)  {
+  // console.log(redundantArray[index]);
+    if (newArray.includes(redundantArray[index]) === false) {
+      newArray.push(redundantArray[index])
+    }
+  index = index +1;
+}
+console.log(redundantArray);
+console.log(newArray);
+
+// count = 0 
+// while (count < redundantArray.length) {
+//   console.log(count, (redundantArray[count]), redundantArray[count], count);
+//   superArray.push(redundantArray[count])
+//   if (!superArray.includes(redundantArray[count])) {
+//     superArray.push(redundantArray[count])
+//   }
+//   count = count+1;
+// }
+
+// console.log(superArray);
